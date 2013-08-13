@@ -6,7 +6,7 @@ Summary: WSGI middleware layer to provide sessions
 Group: Development/Languages
 License: BSD and MIT
 URL: http://beaker.groovie.org/
-Source0: beaker-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python2-devel
 BuildRequires: python-setuptools
@@ -17,7 +17,7 @@ Myghty's Container API used in MyghtyUtils. WSGI middleware is also included to
 manage Session objects and signed cookies.
 
 %prep
-%setup -q -n beaker-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 cd beaker
