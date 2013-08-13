@@ -29,7 +29,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install --skip-build \
 	--root $RPM_BUILD_ROOT \
 	--install-headers=%{_includedir}/python \
-	--install-lib=%{python_sitearch}
+	--install-lib=%{python_sitelib}
 
 rm -rf $RPM_BUILD_ROOT/%{python_sitelib}/tests
 
